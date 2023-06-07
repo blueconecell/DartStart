@@ -1,9 +1,16 @@
 void main() {
   print('now Running Dart!!!');
 
-  final name = 'jeongyeon';
-  print(name);
-  // name = '33';
+  late final String name;
+  // do someThing, go to api
 
-  print(name);
+  name = 'jeongyeon';
+
+  late final String otherName = 'perfect';
+  // otherName = 'not';
+
+  final String cant;
+  cant = 'cant';
+
+  print(name + ' ' + otherName + ' ' + cant);
 }
