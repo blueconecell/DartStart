@@ -1,7 +1,9 @@
 void main() {
   print('now Running Dart!!!');
-  int? name = 1;
-  name = null;
+
+  final name = 'jeongyeon';
   print(name);
-  name?.isOdd;
+  // name = '33';
+
+  print(name);
 }
