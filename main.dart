@@ -1,20 +1,15 @@
 void main() {
-  print('now Running Dart!!!');
+  var giveMeFive = true;
+  List<int> numbers = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    if (giveMeFive) 55,
+  ];
 
-  var a;
-  a = '123';
-  a = 123;
-  a = true;
-  print(a);
-
-  dynamic b;
-  b = '1234';
-  b = 1234;
-  b = true;
-  print(b);
-
-  String? c;
-  c = '123';
-  c?.isEmpty;
-  print(c);
+  print(numbers);
+  numbers.add(22);
+  print(numbers.length);
 }
