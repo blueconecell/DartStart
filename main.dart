@@ -1,15 +1,7 @@
 void main() {
-  var giveMeFive = true;
-  List<int> numbers = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    if (giveMeFive) 55,
-  ];
+  var name = 'jeongyeon';
+  var age = 20;
 
-  print(numbers);
-  numbers.add(22);
-  print(numbers.length);
+  var greeting = 'hi my name is $name, nice to meet you! And I\'m ${age + 4}.';
+  print(greeting);
 }
