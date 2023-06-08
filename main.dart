@@ -1,29 +1,11 @@
 void main() {
-  var player = {
-    'name': 'nice',
-    'xp': 19.99,
-    'superpower': false,
-  };
-  Map<int, bool> roll = {
-    1: true,
-    2: false,
-    3: true,
-  };
-  Map<List<int>, bool> roll2 = {
-    [1]: true,
-    [2]: false,
-    [3, 23]: true,
-  };
-  List<Map<String, Object>> playerList = [
-    {
-      'name': 'nice',
-      'xp': 19.99,
-      'superpower': false,
-    },
-    {
-      'name': 'nice',
-      'xp': 19.99,
-      'superpower': false,
-    },
-  ];
+  var numbers = {1, 2, 3, 4};
+  Set<int> numbersSet = {1, 2, 3, 4}; //내부 숫자들은 유니트해진다.
+  numbersSet.add(1);
+  numbersSet.add(1);
+  numbersSet.add(1);
+  numbersSet.add(11);
+  numbersSet.add(11);
+  numbersSet.add(11);
+  print(numbersSet);
 }
