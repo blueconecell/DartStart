@@ -1,15 +1,26 @@
 class Player {
   final String name; //cant change
-  int xp;
+  int xp, age;
   String team;
-  int age;
 
   Player({
     required this.name,
     required this.xp,
     required this.team,
     required this.age,
-  }) {}
+  });
+  Player.createBluePlayer({required String name, required int age})
+      : this.age = age,
+        this.name = name,
+        this.team = 'blue',
+        this.xp = 0;
+  // 초기화시키기
+  Player.createRedPlayer({required String name, required int age})
+      : this.age = age,
+        this.name = name,
+        this.team = 'red',
+        this.xp = 0;
+  // 초기화시키기
 
   void sayHello() {
     print("hi my name is $name");
@@ -18,12 +29,14 @@ class Player {
 
 void main() {
   print('123');
-  var player1 = Player(
+
+  var bluePlayer1 = Player.createBluePlayer(
     name: 'kim',
-    xp: 1500,
-    team: 'red',
     age: 12,
   );
-  print(player1.name);
-  print('123');
+
+  var redPlayer1 = Player.createRedPlayer(
+    name: 'park',
+    age: 12,
+  );
 }
