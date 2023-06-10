@@ -1,17 +1,16 @@
-typedef ListOfInts = List<int>;
+class Player {
+  final String name = 'kim'; //cant change
+  int xp = 1500;
 
-List<int> reverseListOfNumbers(List<int> list) {
-  var reversed = list.reversed;
-  return reversed.toList();
-}
-
-typedef UserInfo = Map<String, String>;
-
-String sayHi(Map<String, String> userInfo) {
-  return "Hi ${userInfo['name']}";
+  void sayHello() {
+    print("hi my name is $name");
+  }
 }
 
 void main() {
-  print(reverseListOfNumbers([1, 2, 3]));
-  print(sayHi({"name": "kim"}));
+  var player1 = Player();
+  print(player1.name);
+  // player1.name = '2221111';
+  print(player1.name);
+  player1.sayHello();
 }
